@@ -9,7 +9,7 @@ function displayVideo() {
     const params = getQueryParams();
     const videoUrl = params.video_url;
     if (videoUrl === 'Not provided') {
-        document.getElementById('videoContainer').innerHTML = '<center><h1>Video URL not provided!</h1></center>';
+        document.getElementById('videoContainer').innerHTML = '<center><h1>YT video URL not provided!</h1></center>';
         return;
     }
     const videoId = new URL(videoUrl).searchParams.get('v');
